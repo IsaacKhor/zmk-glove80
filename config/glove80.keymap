@@ -4,14 +4,7 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
-/* Automatically generated layer name #define */
-
-#define LAYER_Base 0
-#define LAYER_Number 1
-#define LAYER_Symbol 2
-#define LAYER_Nav 3
-#define LAYER_Function 4
-#define LAYER_Magic 5
+&lt { flavor = "balanced"; };
 
 / {
     macros {
@@ -38,14 +31,13 @@
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 3>;
         };
-        
+
         rgb_ug_status_macro: rgb_ug_status_macro {
             label = "RGB_UG_STATUS";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_STATUS>;
         };
-
     };
 
     behaviors {
@@ -79,18 +71,18 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_Base {
+        base {
             bindings = <
-&none            &none          &none         &none         &none                                                                                                                    &none           &none         &none         &none          &none
-&none            &kp N1         &kp N2        &kp N3        &kp N4          &kp N5                                                                                           &kp N6  &kp N7          &kp N8        &kp N9        &kp N0         &none
-&kp TAB          &kp SQT        &kp COMMA     &kp DOT       &kp P           &kp Y                                                                                            &kp F   &kp G           &kp C         &kp R         &kp L          &kp SLASH
-&kp ESC          &hrml LCTRL A  &hrml LALT O  &hrml LGUI E  &hrml LSHIFT U  &kp I                                                                                            &kp D   &hrmr RSHIFT H  &hrmr RGUI T  &hrmr RALT N  &hrmr RCTRL S  &kp MINUS
-&kp LSHFT        &kp SEMI       &kp Q         &kp J         &kp K           &kp X   &kp LSHFT   &none      &none                   &none             &none      &kp RSHFT    &kp B   &kp M           &kp W         &kp V         &kp Z          &kp RSHFT
-&mo LAYER_Magic  &none          &none         &kp LEFT      &kp RIGHT               &lt 1 BSPC  &lt 3 ESC  &kp LC(LA(LS(LGUI)))    &kp LC(LS(LALT))  &lt 4 RET  &lt 2 SPACE          &kp DOWN        &kp UP        &none         &none          &mo 5
+&none      &none          &none         &none         &none                                                                                                                      &none           &none         &none         &none          &none
+&none      &kp N1         &kp N2        &kp N3        &kp N4          &kp N5                                                                                             &kp N6  &kp N7          &kp N8        &kp N9        &kp N0         &none
+&kp TAB    &kp SQT        &kp COMMA     &kp DOT       &kp P           &kp Y                                                                                              &kp F   &kp G           &kp C         &kp R         &kp L          &kp SLASH
+&kp ESC    &hrml LCTRL A  &hrml LALT O  &hrml LGUI E  &hrml LSHIFT U  &kp I                                                                                              &kp D   &hrmr RSHIFT H  &hrmr RGUI T  &hrmr RALT N  &hrmr RCTRL S  &kp MINUS
+&kp LSHFT  &kp SEMI       &kp Q         &kp J         &kp K           &kp X   &kp SPACE   &none      &mo 5                   &none             &none      &kp BACKSPACE  &kp B   &kp M           &kp W         &kp V         &kp Z          &kp RSHFT
+&mo 5      &none          &none         &kp LEFT      &kp RIGHT               &lt 1 BSPC  &lt 3 ESC  &kp LC(LA(LS(LGUI)))    &kp LC(LS(LALT))  &lt 4 RET  &lt 2 SPACE            &kp DOWN        &kp UP        &none         &none          &mo 5
             >;
         };
 
-        layer_Number {
+        number {
             bindings = <
 &none  &none   &none      &none    &none                                                                 &none     &none     &none      &none   &none
 &none  &none   &none      &none    &none     &none                                                &none  &none     &none     &none      &none   &none
@@ -101,7 +93,7 @@
             >;
         };
 
-        layer_Symbol {
+        symbol {
             bindings = <
 &none  &none      &none      &none      &none                                                                &none      &none     &none      &none     &none
 &none  &none      &none      &none      &none      &none                                              &none  &none      &none     &none      &none     &none
@@ -112,7 +104,7 @@
             >;
         };
 
-        layer_Nav {
+        navigation {
             bindings = <
 &none  &none   &none    &none    &none                                                                       &none             &none             &none             &none              &none
 &none  &none   &none    &none    &none    &none                                                       &none  &none             &none             &none             &none              &none
@@ -123,7 +115,7 @@
             >;
         };
 
-        layer_Function {
+        function {
             bindings = <
 &none  &none                   &none                    &none                    &none                                                                              &none  &none  &none  &none  &none
 &none  &none                   &none                    &none                    &none                    &none                                              &none  &none  &none  &none  &none  &none
@@ -134,14 +126,14 @@
             >;
         };
 
-        layer_Magic {
+        meta {
             bindings = <
-&bt BT_CLR   &none            &none            &none            &none                                                                                       &none  &none  &none  &none  &bt BT_CLR_ALL
-&none        &none            &none            &none            &none            &none                                                               &none  &none  &none  &none  &none  &none
-&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                     &none  &none  &none  &none  &none  &none
-&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                     &none  &none  &none  &none  &none  &bootloader
-&sys_reset   &none            &none            &none            &none            &none            &bt_2  &bt_3  &none           &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
-&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB    &none  &none  &none         &none  &none  &none  &none  &none
+&bt BT_CLR   &none            &none            &none            &none                                                                                            &none  &none  &none  &none  &bt BT_CLR_ALL
+&none        &none            &none            &none            &none                 &none                                                               &none  &none  &none  &none  &none  &none
+&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI       &rgb_ug RGB_TOG                                                     &none  &none  &none  &none  &none  &none
+&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD       &rgb_ug RGB_EFF                                                     &none  &none  &none  &none  &none  &bootloader
+&sys_reset   &none            &none            &none            &rgb_ug_status_macro  &none            &bt_2  &bt_3  &none           &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
+&none        &none            &none            &none            &none                                  &bt_0  &bt_1  &out OUT_USB    &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
     };
