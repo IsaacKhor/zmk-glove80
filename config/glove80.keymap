@@ -123,12 +123,12 @@
 
         symbol {
             bindings = <
-&none  &none                       &none                      &none                       &none                                                                              &none                  &none                            &none                             &none                  &none
-&none  &none                       &none                      &none                       &none                   &none                                               &none  &none                  &none                            &none                             &none                  &none
-&none  &kp PLUS                    &kp GRAVE                  &kp TILDE                   &kp HASH                &none                                               &none  &kp PRCNT              &kp LBKT                         &kp RBKT                          &kp EQUAL              &none
-&none  &hrml_tap LCTRL UNDERSCORE  &hrml_tap LALT LEFT_BRACE  &hrml_tap RCMD RIGHT_BRACE  &hrml_tap LSHFT DOLLAR  &kp STAR                                            &none  &hrmr_tap RSHFT MINUS  &hrmr_tap RCMD LEFT_PARENTHESIS  &hrmr_tap RALT RIGHT_PARENTHESIS  &hrmr_tap RCTRL SLASH  &none
-&none  &kp EXCL                    &kp AMPS                   &kp BSLH                    &kp COLON               &none     &none  &none  &none  &none  &none  &none  &none  &kp QMARK              &kp PIPE                         &kp CARET                         &kp AT                 &none
-&none  &none                       &none                      &none                       &none                             &none  &none  &none  &none  &none  &none         &none                  &none                            &none                             &none                  &none
+&none  &none           &none           &none            &none                                                                  &none      &none                 &none                  &none      &none
+&none  &none           &none           &none            &none       &none                                               &none  &none      &none                 &none                  &none      &none
+&none  &kp PLUS        &kp GRAVE       &kp TILDE        &kp HASH    &none                                               &none  &kp PRCNT  &kp LBKT              &kp RBKT               &kp EQUAL  &none
+&none  &kp UNDERSCORE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOLLAR  &kp STAR                                            &none  &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH  &none
+&none  &kp EXCL        &kp AMPS        &kp BSLH         &kp COLON   &none     &none  &none  &none  &none  &none  &none  &none  &kp QMARK  &kp PIPE              &kp CARET              &kp AT     &none
+&none  &none           &none           &none            &none                 &none  &none  &none  &none  &none  &none         &none      &none                 &none                  &none      &none
             >;
         };
 
