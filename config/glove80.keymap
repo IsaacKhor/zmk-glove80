@@ -101,67 +101,67 @@
 
         base {
             bindings = <
-&none      &none          &none         &none         &none                                                                                                                    &none           &none         &none         &none          &none
-&none      &kp N1         &kp N2        &kp N3        &kp N4          &kp N5                                                                                           &kp N6  &kp N7          &kp N8        &kp N9        &kp N0         &none
-&kp TAB    &kp SQT        &kp COMMA     &kp DOT       &kp P           &kp Y                                                                                            &kp F   &kp G           &kp C         &kp R         &kp L          &kp SLASH
-&kp ESC    &hrml LCTRL A  &hrml LALT O  &hrml LGUI E  &hrml LSHIFT U  &kp I                                                                                            &kp D   &hrmr RSHIFT H  &hrmr RGUI T  &hrmr RALT N  &hrmr RCTRL S  &kp MINUS
-&kp LSHFT  &kp SEMI       &kp Q         &kp J         &kp K           &kp X   &kp SPACE   &none      &mo 5                 &none             &none      &kp BACKSPACE  &kp B   &kp M           &kp W         &kp V         &kp Z          &kp RSHFT
-&mo 5      &none          &none         &kp LEFT      &kp RIGHT               &lt 1 BSPC  &lt 3 ESC  &kp LC(LA(LS(LGUI)))  &kp LC(LS(LALT))  &lt 4 RET  &lt 2 SPACE            &kp DOWN        &kp UP        &none         &none          &mo 5
+&none      &none          &none         &none         &none                                                                                                                      &none           &none         &none         &none          &none
+&none      &kp N1         &kp N2        &kp N3        &kp N4          &kp N5                                                                                             &kp N6  &kp N7          &kp N8        &kp N9        &kp N0         &none
+&kp TAB    &kp SQT        &kp COMMA     &kp DOT       &kp P           &kp Y                                                                                              &kp F   &kp G           &kp C         &kp R         &kp L          &kp SLASH
+&kp ESC    &hrml LCTRL A  &hrml LALT O  &hrml LGUI E  &hrml LSHIFT U  &kp I                                                                                              &kp D   &hrmr RSHIFT H  &hrmr RGUI T  &hrmr RALT N  &hrmr RCTRL S  &kp MINUS
+&kp LSHFT  &kp SEMI       &kp Q         &kp J         &kp K           &kp X   &kp SPACE   &none      &mo 5                   &none             &none      &kp BACKSPACE  &kp B   &kp M           &kp W         &kp V         &kp Z          &kp RSHFT
+&mo 5      &none          &none         &kp LEFT      &kp RIGHT               &lt 1 BSPC  &lt 3 ESC  &kp LC(LA(LS(LGUI)))    &kp LC(LS(LALT))  &lt 4 RET  &lt 2 SPACE            &kp DOWN        &kp UP        &none         &none          &mo 5
             >;
         };
 
         number {
             bindings = <
-&none  &none               &none              &none              &none                                                                         &none               &none              &none              &none               &none
-&none  &none               &none              &none              &none               &none                                              &none  &none               &none              &none              &none               &none
-&none  &none               &kp MINUS          &kp DOT            &kp FSLH            &none                                              &none  &kp PLUS            &kp STAR           &kp EQUAL          &none               &none
-&none  &hrml_tap LCTRL N6  &hrml_tap LALT N2  &hrml_tap LCMD N0  &hrml_tap LSHFT N4  &none                                              &none  &hrmr_tap RSHFT N5  &hrmr_tap RCMD N1  &hrmr_tap RALT N3  &hrmr_tap RCTRL N7  &none
-&none  &tog 1              &none              &none              &kp N8              &none  &none  &none  &none  &none  &none   &none   &none  &kp N9              &none              &none              &to 1               &none
-&none  &none               &none              &none              &none                      &none  &none  &none  &none  &trans  &trans         &none               &none              &none              &none               &none
+&none  &none               &none              &none              &none                                                                           &none               &none              &none              &none               &none
+&none  &none               &none              &none              &none               &none                                                &none  &none               &none              &none              &none               &none
+&none  &none               &kp MINUS          &kp DOT            &kp FSLH            &none                                                &none  &kp PLUS            &kp STAR           &kp EQUAL          &none               &none
+&none  &hrml_tap LCTRL N6  &hrml_tap LALT N2  &hrml_tap LCMD N0  &hrml_tap LSHFT N4  &none                                                &none  &hrmr_tap RSHFT N5  &hrmr_tap RCMD N1  &hrmr_tap RALT N3  &hrmr_tap RCTRL N7  &none
+&none  &tog 1              &none              &none              &kp N8              &none  &none  &none  &none    &none  &none   &none   &none  &kp N9              &none              &none              &to 1               &none
+&none  &none               &none              &none              &none                      &none  &none  &none    &none  &trans  &trans         &none               &none              &none              &none               &none
             >;
         };
 
         symbol {
             bindings = <
-&none  &none           &none           &none            &none                                                                  &none      &none                 &none                  &none      &none
-&none  &none           &none           &none            &none       &none                                               &none  &none      &none                 &none                  &none      &none
-&none  &kp PLUS        &kp GRAVE       &kp TILDE        &kp HASH    &none                                               &none  &kp PRCNT  &kp LBKT              &kp RBKT               &kp EQUAL  &none
-&none  &kp UNDERSCORE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOLLAR  &kp STAR                                            &none  &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH  &none
-&none  &kp EXCL        &kp AMPS        &kp BSLH         &kp COLON   &none     &none  &none  &none  &none  &none  &none  &none  &kp QMARK  &kp PIPE              &kp CARET              &kp AT     &none
-&none  &none           &none           &none            &none                 &none  &none  &none  &none  &none  &none         &none      &none                 &none                  &none      &none
+&none  &none           &none           &none            &none                                                                                &none      &none                 &none                  &none      &none
+&none  &none           &none           &none            &none       &none                                                  &none             &none      &none                 &none                  &none      &none
+&none  &none           &kp GRAVE       &kp TILDE        &kp HASH    &kp PLUS                                               &kp LESS_THAN     &kp PRCNT  &kp LBKT              &kp RBKT               &none      &none
+&none  &kp UNDERSCORE  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOLLAR  &kp STAR                                               &kp DOT           &kp MINUS  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SLASH  &none
+&none  &kp EXCL        &kp AMPS        &kp BSLH         &kp COLON   &kp EQUAL  &none  &none  &none    &none  &none  &none  &kp GREATER_THAN  &kp QMARK  &kp PIPE              &kp CARET              &kp AT     &none
+&none  &none           &none           &none            &none                  &none  &none  &none    &none  &none  &none                    &none      &none                 &none                  &none      &none
             >;
         };
 
         navigation {
             bindings = <
-&none  &none   &none    &none    &none                                                                     &none             &none             &none             &none              &none
-&none  &none   &none    &none    &none    &none                                                     &none  &none             &none             &none             &none              &none
-&none  &kp F1  &kp F2   &kp F3   &kp F4   &kp F13                                                   &none  &kp LG(LC(LEFT))  &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &kp LG(RC(RIGHT))  &none
-&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp F14                                                   &none  &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT          &none
-&none  &kp F9  &kp F10  &kp F11  &kp F12  &kp F15  &trans  &none   &none   &none   &none   &trans   &none  &caps_word        &kp TAB           &none             &none              &none
-&none  &none   &none    &none    &none             &trans  &trans  &trans  &trans  &trans  &kp DEL         &none             &none             &none             &none              &none
+&none  &none   &none    &none    &none                                                                       &none             &none             &none             &none              &none
+&none  &none   &none    &none    &none    &none                                                       &none  &none             &none             &none             &none              &none
+&none  &kp F1  &kp F2   &kp F3   &kp F4   &kp F13                                                     &none  &kp LG(LC(LEFT))  &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &kp LG(RC(RIGHT))  &none
+&none  &kp F5  &kp F6   &kp F7   &kp F8   &kp F14                                                     &none  &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT          &none
+&none  &kp F9  &kp F10  &kp F11  &kp F12  &kp F15  &trans  &none   &none     &none   &none   &trans   &none  &caps_word        &kp TAB           &none             &none              &none
+&none  &none   &none    &none    &none             &trans  &trans  &trans    &trans  &trans  &kp DEL         &none             &none             &none             &none              &none
             >;
         };
 
         function {
             bindings = <
-&none  &none                   &none                    &none                    &none                                                                            &none  &none  &none  &none  &none
-&none  &none                   &none                    &none                    &none                    &none                                            &none  &none  &none  &none  &none  &none
-&none  &kp LC(LS(LA(LG(F1))))  &kp LC(LS(LA(LG(F2))))   &kp LC(LS(LA(LG(F3))))   &kp LC(LS(LA(LG(F4))))   &none                                            &none  &none  &none  &none  &none  &none
-&none  &kp LC(LS(LA(LG(F5))))  &kp LC(LS(LA(LG(F6))))   &kp LC(LS(LA(LG(F7))))   &kp LC(LS(LA(LG(F8))))   &none                                            &none  &none  &none  &none  &none  &none
-&none  &kp LC(LS(LA(LG(F9))))  &kp LC(LS(LA(LG(F10))))  &kp LC(LS(LA(LG(F11))))  &kp LC(LS(LA(LG(F12))))  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none                   &none                    &none                    &none                           &none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none
+&none  &none                   &none                    &none                    &none                                                                              &none  &none  &none  &none  &none
+&none  &none                   &none                    &none                    &none                    &none                                              &none  &none  &none  &none  &none  &none
+&none  &kp LC(LS(LA(LG(F1))))  &kp LC(LS(LA(LG(F2))))   &kp LC(LS(LA(LG(F3))))   &kp LC(LS(LA(LG(F4))))   &none                                              &none  &none  &none  &none  &none  &none
+&none  &kp LC(LS(LA(LG(F5))))  &kp LC(LS(LA(LG(F6))))   &kp LC(LS(LA(LG(F7))))   &kp LC(LS(LA(LG(F8))))   &none                                              &none  &none  &none  &none  &none  &none
+&none  &kp LC(LS(LA(LG(F9))))  &kp LC(LS(LA(LG(F10))))  &kp LC(LS(LA(LG(F11))))  &kp LC(LS(LA(LG(F12))))  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none  &none  &none
+&none  &none                   &none                    &none                    &none                           &none  &none  &none    &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
 
         meta {
             bindings = <
-&bt BT_CLR   &none            &none            &none            &none                                                                                          &none  &none  &none  &none  &bt BT_CLR_ALL
-&none        &none            &none            &none            &none                 &none                                                             &none  &none  &none  &none  &none  &none
-&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI       &rgb_ug RGB_TOG                                                   &none  &none  &none  &none  &none  &none
-&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD       &rgb_ug RGB_EFF                                                   &none  &none  &none  &none  &none  &bootloader
-&sys_reset   &none            &none            &none            &rgb_ug_status_macro  &none            &bt_2  &bt_3  &none         &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
-&none        &none            &none            &none            &none                                  &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none  &none  &none  &none  &none
+&bt BT_CLR   &none            &none            &none            &none                                                                                            &none  &none  &none  &none  &bt BT_CLR_ALL
+&none        &none            &none            &none            &none            &none                                                                    &none  &none  &none  &none  &none  &none
+&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                          &none  &none  &none  &none  &none  &none
+&bootloader  &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                          &none  &none  &none  &none  &none  &bootloader
+&sys_reset   &none            &none            &none            &none            &rgb_ug_status_macro  &bt_2  &bt_3  &none           &none  &none  &none  &none  &none  &none  &none  &none  &sys_reset
+&none        &none            &none            &none            &none                                  &bt_0  &bt_1  &out OUT_USB    &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
     };
